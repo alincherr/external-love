@@ -17,8 +17,8 @@
 
 .card{
     display: block;
-    margin: 0 auto;
-    width: 20%;
+    margin: 50px auto;
+    width: 290px;
 }
 
 .card__image{
@@ -32,7 +32,7 @@
 
 .card__description{
     background: #ebe7e7;
-    padding: 6px;
+    padding: 5px;
     width: 100%;
     color: black;
 }
@@ -50,6 +50,10 @@
      /* padding: 5px; */
 }
 
+.spot{
+    display: flex;
+    align-items: center;
+}
 
 .link{
     text-decoration: none;
@@ -59,7 +63,12 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 6px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.link:hover{
+    background: #e9e2e2;
 }
 
 .link__button{
@@ -72,4 +81,35 @@
 .link__icon{
     width: 39px;
     height: 39px;
+    margin-right: 10px;
+}
+
+@media (max-width: 370px) {
+.card__image{
+    background-size: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+.card{
+    display: block;
+    margin: 50px auto;
+    width: 140px;
+}
+
+.card__title{
+    font-size: 18px;
+}
+
+.link__icon{
+    width: 15px;
+    height: 15px;
+}
+
+.link__name{
+    font-size: 10px;
+}
+.link__button{
+    font-size: 10px;
+}
 }
